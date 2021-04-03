@@ -4,7 +4,7 @@ An experimental spy tool for Screeps
 
 ### Credits
 
-- (screepers/python-screeps)[https://github.com/screepers/python-screeps]
+- [screepers/python-screeps](https://github.com/screepers/python-screeps)
 
 ### Requirements
 
