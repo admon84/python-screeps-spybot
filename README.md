@@ -2,6 +2,10 @@
 
 An experimental spy tool for Screeps
 
+### Credits
+
+- [screepers/python-screeps](https://github.com/screepers/python-screeps)
+
 ### Requirements
 
 - Python v3.8
@@ -65,3 +69,24 @@ I recommend creating an environment variable named `SCREEPS_AUTH_TOKEN` on your 
 #~ .bashrc example (linux)
 export SCREEPS_AUTH_TOKEN=123e4567-e89b-12d3-a456-426614174000
 ```
+
+### Usage
+
+Once everything is configured, you can run the `spybot.py` script
+
+```bash
+#~ activate virtual environment
+source env/bin/activate
+
+#~ run spybot
+python3.8 spybot.py
+
+#~ to exit the virtual environment
+deactivate
+```
+
+### To-do
+
+- Move updated [screepsapi.py](screepsapi.py) to my forked [admon84/python-screeps](https://github.com/admon84/python-screeps)
+- Package spybot into a CLI tool
+- Add more features :robot:
