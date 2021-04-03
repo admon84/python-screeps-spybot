@@ -29,7 +29,7 @@ source env/bin/activate
 python3.8 -m pip install --upgrade pip
 
 #~ install deps
-pip install pyyaml jsonschema rich requests websocket
+pip install pyyaml jsonschema rich envyaml requests websocket
 ```
 
 ### Configure
