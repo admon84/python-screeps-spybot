@@ -1,14 +1,14 @@
 ---
 api_host: screeps.com
-api_prefix: '/season'
+api_prefix: ''
 api_token: ${SCREEPS_AUTH_TOKEN}
 
-target_shard: shardSeason
+target_shard: shard1
 target_players:
-- likeafox
+- admon
 
 spy_rcl: true
-spy_resources: false
+spy_resources: true
 spy_structures:
 - storage
 - terminal
@@ -19,10 +19,10 @@ spy_market: false
 results_output: true
 
 results_save_file: false
-results_filename: warbot_data.json
+results_filename: spybot_results.json
 
 results_memory: false
-results_memory_path: Memory.warbot
+results_memory_path: Memory.spybot
 
-results_segment: true
+results_segment: false
 results_segment_target: 99
