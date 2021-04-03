@@ -1,0 +1,40 @@
+type: object
+required:
+  - api_host
+  - api_prefix
+  - api_token
+  - target_shard
+  - target_players
+properties:
+  api_host:
+    type: string
+  api_prefix:
+    type: string
+  api_token:
+    type: string
+  target_shard:
+    type: string
+  target_players:
+    type: array
+    items:
+      type: string
+  spy_resources:
+    type: boolean
+  spy_structures:
+    type: array
+    items:
+      type: string
+  results_output:
+    type: boolean
+  results_save_file:
+    type: boolean
+  results_filename:
+    type: string
+  results_memory:
+    type: boolean
+  results_memory_path:
+    type: string
+  results_segment:
+    type: boolean
+  results_segment_target:
+    type: number
