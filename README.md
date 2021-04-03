@@ -36,7 +36,7 @@ Change settings in [config.yaml](config.yaml) to your own preferences
 |-------|----|-----------|
 |api_host|string|Hostname for API, examples: `screeps.com` or `server1.screepspl.us:443`|
 |api_prefix|string|Prefix API path, examples: `/ptr` or `/season`|
-|api_token|string|Screeps Auth Token, required for `results_memory: true` or `results_segment: true`|
+|api_token|string|Screeps Auth Token, required for saving results to in-game memory|
 |target_shard|string|Shard to target, examples: `shard3` or `shardSeason`|
 |target_players|array|List of player names to gather information on|
 |spy_rcl|string|Get the Room Controller Level of owned rooms|
