@@ -130,7 +130,8 @@ class Spybot(object):
                     res = self.api.room_objects(room=room, shard=shard)
                     if self.config.spy_resources:
                         room_resources = self.getRoomResources(res['objects'])
-                        data['rooms'][room]['resources'] = room_resources
+                        if room in self.config.spy_rooms:
+                            data['rooms'][room]['resources'] = room_resources
                         total_resources = self.updateGrandTotal(total_resources, room_resources)
                         data['players'][username]['resources'] = total_resources
                     if self.config.spy_rcl:

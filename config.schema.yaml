@@ -20,6 +20,10 @@ properties:
       type: string
   spy_resources:
     type: boolean
+  spy_rooms:
+    type: array
+    items:
+      type: string
   spy_structures:
     type: array
     items:

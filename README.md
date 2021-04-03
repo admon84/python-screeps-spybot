@@ -45,6 +45,7 @@ Change settings in [config.yaml](config.yaml) to your own preferences
 |target_players|array|List of player names to gather information on|
 |spy_rcl|string|Get the Room Controller Level of owned rooms|
 |spy_resources|boolean|Get the amount of each resource in owned rooms|
+|spy_rooms|array|List of specific rooms to separately track resources|
 |spy_structures|array|List of structures to scan for resources|
 |spy_market|boolean|Not implemented|
 |results_output|boolean|Display spybot results in the terminal output|
