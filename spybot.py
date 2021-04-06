@@ -2,10 +2,10 @@ import sys
 import yaml
 import json
 import jsonschema
+import screepsapi
 from datetime import datetime
 from rich import print
 from envyaml import EnvYAML
-from screepsapi import ScreepsAPI
 
 class Spybot(object):
     """
@@ -30,11 +30,13 @@ class Spybot(object):
         self.config = EnvYAML(self.config_file)
 
     def startAPI(self):
-        self.api = ScreepsAPI(
+        self.api = screepsapi.API(
             host=self.config['api_host'],
             prefix=self.config['api_prefix'],
-            token=self.config['api_token'],
-            secure=True
+            token=self.config['api_token'] if self.config['api_token'] else None,
+            u=self.config['api_username'] if self.config['api_username'] else None,
+            p=self.config['api_password'] if self.config['api_password'] else None,
+            secure=self.config['api_secure'] if self.config['api_secure'] else None
         )
 
     def log(self, *args, **kwargs):

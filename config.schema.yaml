@@ -2,7 +2,6 @@ type: object
 required:
   - api_host
   - api_prefix
-  - api_token
   - target_shard
   - target_players
 properties:
@@ -12,6 +11,12 @@ properties:
     type: string
   api_token:
     type: string
+  api_username:
+    type: string
+  api_password:
+    type: string
+  api_secure:
+    type: boolean
   target_shard:
     type: string
   target_players:

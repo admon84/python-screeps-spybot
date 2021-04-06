@@ -2,6 +2,9 @@
 api_host: screeps.com
 api_prefix: ''
 api_token: ${SCREEPS_AUTH_TOKEN}
+api_username: ''
+api_password: ''
+api_secure: true
 
 target_shard: shard1
 target_players:
