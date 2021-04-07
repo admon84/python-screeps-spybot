@@ -9,7 +9,7 @@ from envyaml import EnvYAML
 
 class Spybot(object):
     """
-    Screeps intel gathering for wartime
+    Screeps spy utility
     """
 
     def __init__(self):
@@ -100,13 +100,12 @@ class Spybot(object):
             grand_total = self.updateTotal(grand_total, resource, amount)
         return grand_total
 
-    def run(self):
+    def main(self):
+        shard = self.config['target_shard']
         data = {
             'rooms': {},
             'players': {}
         }
-
-        shard = self.config['target_shard']
 
         for username in self.config['target_players']:
             if (not self.config['spy_resources'] and
@@ -132,7 +131,7 @@ class Spybot(object):
                     res = self.api.room_objects(room=room, shard=shard)
                     if self.config['spy_resources']:
                         room_resources = self.getRoomResources(res['objects'])
-                        if room in self.config['spy_rooms']:
+                        if room in self.config['target_rooms']:
                             data['rooms'][room]['resources'] = room_resources
                         total_resources = self.updateGrandTotal(total_resources, room_resources)
                         data['players'][username]['resources'] = total_resources
@@ -157,5 +156,6 @@ class Spybot(object):
             self.api.set_segment(segment, data_json, shard)
             self.log('Uploaded data (size ', data_size, ') to segment ', segment, ' on ', shard, sep='')
 
-spybot = Spybot()
-spybot.run()
+
+if __name__ == "__main__":
+    Spybot().main()

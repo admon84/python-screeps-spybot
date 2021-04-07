@@ -23,12 +23,12 @@ properties:
     type: array
     items:
       type: string
-  spy_resources:
-    type: boolean
-  spy_rooms:
+  target_rooms:
     type: array
     items:
       type: string
+  spy_resources:
+    type: boolean
   spy_structures:
     type: array
     items:

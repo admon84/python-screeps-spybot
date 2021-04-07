@@ -7,13 +7,13 @@ api_password: ''
 api_secure: true
 
 target_shard: shard1
+target_rooms:
+- W6S9
 target_players:
 - admon
 
 spy_rcl: true
 spy_resources: true
-spy_rooms:
-- W6S9
 spy_structures:
 - storage
 - terminal
