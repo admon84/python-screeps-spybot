@@ -1,14 +1,10 @@
 # python-screeps-spybot
 
-An experimental spy utility for Screeps
-
-### Credits
-
-- [screepers/python-screeps](https://github.com/screepers/python-screeps)
+An experimental spy tool for Screeps using the unofficial Screeps API
 
 ### Requirements
 
-- Python v3.8 (only version tested)
+- Python 3
 
 ### Install
 
